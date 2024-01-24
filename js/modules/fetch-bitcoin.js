@@ -1,4 +1,5 @@
 export default function initBit() {
+  console.log('url')
   fetch('https://blockchain.info/ticker')
     .then((response) => response.json())
     .then((json) => {
