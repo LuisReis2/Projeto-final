@@ -1,5 +1,5 @@
 import ScrollSuave from './modules/scroll-suave.js';
-import initAccordion from './modules/accordion-list.js';
+import Accordion from './modules/accordion-list.js';
 import initTabNav from './modules/tab-view.js';
 import initModal from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
@@ -11,11 +11,12 @@ import initBit from './modules/fetch-bitcoin.js';
 import initAnimaScroll from './modules/anima-scroll.js';
 
 const scrollsuave = new ScrollSuave('[data-tab="menunav"] a[href^="#"]');
-
 scrollsuave.init();
 
+const accordion = new Accordion('[data-tab="accordion"] dt');
+accordion.init();
+
 initAnimaScroll();
-initAccordion();
 initTabNav();
 initModal();
 initTooltip();
