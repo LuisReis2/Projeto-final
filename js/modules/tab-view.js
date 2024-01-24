@@ -23,10 +23,10 @@ export default class TabNav {
 
   init() {
     if (this.tabcontent.length && this.list.length) {
-      console.log(this.tabcontent[0]);
       // ativa o primeiro elemento
       this.ativTab(0);
       this.startEvent();
     }
+    return this;
   }
 }
