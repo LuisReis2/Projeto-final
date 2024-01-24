@@ -9,7 +9,7 @@ export default function initFetch() {
   }
   async function fetchAnimais() {
     try {
-      const animaisResponse = await fetch('http://127.0.0.1:5501/data.json');
+      const animaisResponse = await fetch(`${window.origin}/data.json`);
       const animaisJSON = await animaisResponse.json();
       const numerosGrid = document.querySelector('.numero-grid');
       animaisJSON.forEach((animal) => {
