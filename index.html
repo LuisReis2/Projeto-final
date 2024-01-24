@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  document.documentElement.className = 'js'
+</script>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Animais fantasticos</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <nav class="menu " data-tab="menunav">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list">
+        <li><a href="#animais">Animais</a></li>
+        <li data-dropdown><a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A Empresa</a></li>
+            <li><a href="socio.html">Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://edutalent.com.br/quem-somos/">dev →</a></li>
+        <li><a data-modal="abrir" href="">login →</a></li>
+      </ul>
+    </nav>
+
+    <section class="grid-section animais  ativo" data-anime="scroll" id="animais">
+      <h1 class="titulo">Animais fantásticos</h1>
+      <ul class="animais-lista " data-tab="menu">
+        <li><img src="img/imagem1.jpg" /></li>
+        <li><img src="img/imagem2.jpg" /></li>
+        <li><img src="img/imagem3.jpg" /></li>
+        <li><img src="img/imagem4.jpg" /></li>
+        <li><img src="img/imagem5.jpg" /></li>
+        <li><img src="img/imagem6.jpg" /></li>
+      </ul>
+      <div class="animais-descricao" data-tab="content">
+        <section data-anime="show-right">
+          <h2>Raposa</h2>
+          <p>As raposas são conhecidas pela sua astúcia e habilidade de adaptação a diferentes ambientes.
+            Elas têm uma dieta variada, incluindo frutas, pequenos mamíferos e insetos.
+            Raposas geralmente são solitárias, exceto durante a época de acasalamento.
+            Elas se comunicam através de uma variedade de sons, gestos e cheiros.
+            As raposas vermelhas são as mais comuns e amplamente distribuídas.
+            Algumas espécies de raposas, como a raposa-do-ártico, mudam a cor da pelagem conforme as estações.</p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Esquilo</h2>
+          <p>Esquilos são roedores ágeis, conhecidos por sua capacidade de escalar e saltar entre árvores.
+            Eles armazenam nozes e sementes para o inverno, o que ajuda na dispersão de sementes.
+            Esquilos comunicam-se através de uma série de vocalizações e gestos.
+            Eles têm uma dieta que inclui principalmente nozes, frutas e sementes.
+            Esquilos são encontrados em quase todos os ambientes, desde florestas tropicais a áreas urbanas.
+            O tamanho e a cor da pelagem dos esquilos variam significativamente entre as espécies.</p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Urso</h2>
+          <p>Ursos são mamíferos grandes, com dietas que variam de omnívoras a carnívoras, dependendo da espécie.
+            Algumas espécies, como o urso-polar, são altamente especializadas em ambientes específicos.
+            Ursos hibernam durante o inverno em climas mais frios, um período de dormência profunda.
+            Eles têm um olfato excepcionalmente aguçado, essencial para encontrar alimento.
+            Ursos são geralmente solitários, exceto fêmeas com filhotes ou durante a época de acasalamento.
+            Ursos desempenham um papel importante na cultura e mitologia de várias sociedades ao redor do mundo.</p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Lobo</h2>
+          <p>Lobos são conhecidos por sua estrutura social complexa, vivendo e caçando em matilhas.
+            Eles são carnívoros, alimentando-se principalmente de ungulados, como veados e alces.
+            Lobos comunicam-se através de uivos, que podem servir para reunir a matilha ou marcar território.
+            Os lobos são ancestrais dos cães domésticos.
+            Eles são adaptáveis a diversos habitats, desde a tundra ártica até florestas e montanhas.
+            Lobos têm um papel importante nos ecossistemas, controlando as populações de presas e influenciando a cadeia
+            alimentar.</p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Macaco</h2>
+          <p>Macacos são primatas, variando de pequenos macacos do Novo Mundo a grandes primatas do Velho Mundo.
+            Eles são conhecidos por sua inteligência e habilidades sociais complexas.
+            A dieta dos macacos varia amplamente, incluindo frutas, folhas, insetos e, ocasionalmente, pequenos animais.
+            Muitos macacos vivem em árvores, mas algumas espécies são terrestres.
+            A comunicação entre macacos inclui uma variedade de vocalizações, expressões faciais e gestos.
+            Alguns macacos usam ferramentas, como pedras para quebrar nozes ou galhos para coletar insetos.</p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Leão</h2>
+          <p>Leões são conhecidos como os "reis da selva", embora vivam principalmente em savanas.
+            Eles são os únicos grandes felinos que vivem em grupos, chamados de "alcateias".
+            A dieta dos leões consiste principalmente de grandes herbívoros, como zebras e antílopes.
+            Leões fêmeas são as principais caçadoras do grupo, trabalhando em equipe para capturar presas.
+            Os leões machos são reconhecíveis por suas juba distintas.
+            Leões desempenham um papel simbólico importante em muitas culturas, representando força e coragem.</p>
+        </section>
+      </div>
+    </section>
+    <section class="grid-section faq " data-anime="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-tab="accordion">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+          caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+        <dt>Eles são fantásticos?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+        </dd>
+        <dt>Qual a diferença?</dt>
+        <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+          caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+        <dt>Como proteger?</dt>
+        <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
+        </dd>
+      </dl>
+    </section>
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numero-grid">
+
+    </div>
+    </section>
+    <section class="grid-section contato " data-anime="scroll" id="contato">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa" data-tooltip aria-label="Proximo ao estacionamento">
+        <img src="img/mapa.png">
+      </div>
+      <ul class="dados">
+        <li>contato@origamid.com</li>
+        <li>+55 (11) 788239043</li>
+        <li>Rua brooklyn n° 2</li>
+        <li>São Paulo - SP</li>
+        <li class="luis" data-funcionamento data-horario="8,18" data-dias="1,2,3,4,5" >Seg à Sex das 8 às 18</li>
+        <li  >Doe <span class="bit">0</span> Bitcoin para os ajudar</li>
+      </ul>
+    </section>
+    <footer class="copy">
+      <p>Powered by: Luis</p>
+    </footer>
+  </div>
+  <section class="modal-container" data-modal="container">
+
+    <div class="modal">
+      <button class="fechar" data-modal="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Email</label>
+        <input type="password" for="senha" id="senha">
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </section>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

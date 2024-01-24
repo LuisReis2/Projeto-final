@@ -1,0 +1,16 @@
+[data-horario]::after{
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height:6px;
+  margin-left: 4px;
+  background-color: red;
+  border-radius: 50%;
+border: 2px solid black;
+}
+[data-horario].aberto::after{
+  background-color: green;
+}
+[data-horario].carlos::after{
+  background-color: blue;
+}
