@@ -1,10 +1,9 @@
-export default function initBit() {
-  console.log('url')
-  fetch('https://blockchain.info/ticker')
+export default function fetchBitCoin(url, target) {
+  fetch(url)
     .then((response) => response.json())
     .then((json) => {
       const real = json.BRL.sell;
-      const span = document.querySelector('.bit');
+      const span = document.querySelector(target);
       span.innerText = (1000 / real).toFixed(4);
     })
     .catch((erro) => {
