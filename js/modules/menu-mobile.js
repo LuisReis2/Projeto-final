@@ -4,7 +4,7 @@ export default class MenuMobile {
   constructor(menuButton, menuList, events) {
     this.menuButton = document.querySelector('[data-menu="button"]');
     this.menuList = document.querySelector('[data-menu="list"]');
-    this.activeClass = 'ativo'
+    this.activeClass = 'ativo';
 
     // atribui os eventos
 
@@ -12,7 +12,8 @@ export default class MenuMobile {
     else this.events = events;
     this.openMenu = this.openMenu.bind(this);
   }
-  // adiciona  o menu e atribui o clique fora para fechar 
+  // adiciona  o menu e atribui o clique fora para fechar
+
   openMenu() {
     this.menuButton.classList.add(this.activeClass);
     this.menuList.classList.add(this.activeClass);
@@ -22,6 +23,7 @@ export default class MenuMobile {
     });
   }
   // adiciona os eventos no menu
+
   addEventListener() {
     this.events.forEach((userEvent) => {
       this.menuButton.addEventListener(userEvent, this.openMenu);

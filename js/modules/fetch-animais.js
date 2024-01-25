@@ -8,30 +8,28 @@ export default function fetchAnimais(url, target) {
     return div;
   }
   const numerosGrid = document.querySelector(target);
-  function preencherAnimais(animal){
+  function preencherAnimais(animal) {
     const divAnimal = criaSection(animal);
-        numerosGrid.appendChild(divAnimal);
+    numerosGrid.appendChild(divAnimal);
   }
 
-  function animaAnimaisNumeros(){
+  function animaAnimaisNumeros() {
     const animanumeros = new AnimaNumeros('[data-numero]', '.numeros', 'ativo');
     animanumeros.init();
-
   }
-  //Cria a div contendo informações através de um JSON 
-  //e cria um animal através do create animal
+  // Cria a div contendo informações através de um JSON
+  // e cria um animal através do create animal
   async function criarAnimais() {
     try {
-      //fetch e espera resposta
+      // fetch e espera resposta
       const animaisResponse = await fetch(url);
-      //pega esponse e cria json
+      // pega esponse e cria json
       const animaisJSON = await animaisResponse.json();
-      animaisJSON.forEach(animal => preencherAnimais(animal));
-      animaAnimaisNumeros()
-     
+      animaisJSON.forEach((animal) => preencherAnimais(animal));
+      animaAnimaisNumeros();
     } catch (erro) {
       console.log(erro);
     }
   }
-  return criarAnimais()
+  return criarAnimais();
 }
