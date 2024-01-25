@@ -26,7 +26,7 @@ const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
 const scrollanima = new ScrollAnima('[data-anime="scroll"]');
-scrollanima.init()
+scrollanima.init();
 
 const dropdown = new DropDown('[data-dropdown]');
 dropdown.init();
@@ -35,7 +35,7 @@ const menumobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menumobile.init();
 
 const hour = new Hour('[data-funcionamento]', 'aberto');
-hour.init()
+hour.init();
 
 fetchAnimais('../../data.json', '.numero-grid');
 

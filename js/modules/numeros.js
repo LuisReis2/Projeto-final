@@ -1,5 +1,5 @@
 export default class AnimaNumeros {
-  constructor(numeros, observerTarget, observerClass){
+  constructor(numeros, observerTarget, observerClass) {
     this.numero = document.querySelectorAll(numeros);
     this.observerClass = observerClass;
     this.observerTarget = document.querySelector(observerTarget);
@@ -20,29 +20,29 @@ export default class AnimaNumeros {
     }, 25 * Math.random());
   }
 
-   contar() {
+  contar() {
     this.numero.forEach((numero) => {
       this.constructor.incrementarNumero(numero);
     });
   }
 
-   handleMutation(mutation) {
-    if(mutation[0].target.classList.contains(this.observerClass)){
+  handleMutation(mutation) {
+    if (mutation[0].target.classList.contains(this.observerClass)) {
       this.observer.disconnect();
-    this.contar();
+      this.contar();
     }
   }
   // adiciona ao mutation objerver quando a classe ativo é atribuida ao target
-  addMutationObserver(){
+
+  addMutationObserver() {
     this.observer = new MutationObserver(this.handleMutation);
     this.observer.observe(this.observerTarget, { attributes: true });
   }
 
-  init(){
-    if(this.numero.length && this.observerTarget){
-      this.addMutationObserver()
+  init() {
+    if (this.numero.length && this.observerTarget) {
+      this.addMutationObserver();
     }
-return this;
+    return this;
   }
-
 }
