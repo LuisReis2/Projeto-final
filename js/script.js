@@ -8,7 +8,7 @@ import initMenuMobile from './modules/menu-mobile.js';
 import initHour from './modules/horario.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitCoin from './modules/fetch-bitcoin.js';
-import initAnimaScroll from './modules/anima-scroll.js';
+import ScrollAnima from './modules/scroll-anima.js';
 
 const scrollsuave = new ScrollSuave('[data-tab="menunav"] a[href^="#"]');
 scrollsuave.init();
@@ -24,7 +24,9 @@ modal.init();
 
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
-initAnimaScroll();
+
+const scrollanima = new ScrollAnima('[data-anime="scroll"]');
+scrollanima.init()
 initDropDown();
 initMenuMobile();
 initHour();
