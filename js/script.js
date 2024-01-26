@@ -9,6 +9,7 @@ import Hour from './modules/horario.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitCoin from './modules/fetch-bitcoin.js';
 import ScrollAnima from './modules/scroll-anima.js';
+import  SlideNav  from "./modules/slide.js";
 
 const scrollsuave = new ScrollSuave('[data-tab="menunav"] a[href^="#"]');
 scrollsuave.init();
@@ -40,3 +41,8 @@ hour.init();
 fetchAnimais('../../data.json', '.numero-grid');
 
 fetchBitCoin('https://blockchain.info/ticker', '.bit');
+
+const slide = new SlideNav('.slide', '.wrapper');
+slide.init()
+
+slide.addControl('.custom-controls')
