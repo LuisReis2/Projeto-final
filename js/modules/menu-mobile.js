@@ -14,7 +14,8 @@ export default class MenuMobile {
   }
   // adiciona  o menu e atribui o clique fora para fechar
 
-  openMenu() {
+  openMenu(event) {
+    event.preventDefault();
     this.menuButton.classList.add(this.activeClass);
     this.menuList.classList.add(this.activeClass);
     clickOutSide(this.menuList, this.events, () => {
